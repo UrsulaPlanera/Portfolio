@@ -1,0 +1,11 @@
+
+
+.container-work-experience{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.container-work-experience ul{
+    list-style: circle;
+}

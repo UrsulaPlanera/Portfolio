@@ -1,0 +1,10 @@
+
+[
+    {
+        "nombreCarrera" : "Ingenieria en sistemas",
+        "universidad" : "Universidad de la Marina Mercante",
+        "comienzo": "06/07/2025",
+        "fin" : "",
+        "enCurso": true 
+    }
+]

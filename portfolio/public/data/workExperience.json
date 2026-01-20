@@ -1,0 +1,15 @@
+
+[
+    {
+    "puesto" : "Analista QA",
+    "empresa" : "Ingematica S.A.",
+    "inicio" : "05/03/2025",
+    "fin" : "",
+    "activo" : true,
+    "description" : "En el puesto me desempeño como QA principalmente en automatizacion, desarrollando herramientas para homologar/regresionar sistemas. Comence el proyecto de automatizacion sobre un sistema en el área de logística, empleando una arquitectura con principios SOLID y buscando siempre la mejora continua del proyecto.",
+    "items" : [
+        "Creación de pruebas de homologacion/regresion utilizando NUnit .NET con C# y Selenium WebDriver.",
+        "Automatizacion de creación de datos masivos en .json en txt y csv utilizando C# .NET para simulacion de carga de datos en servicios y su posterior recuperacion para realizar pruebas automaticas."
+    ]
+}
+]

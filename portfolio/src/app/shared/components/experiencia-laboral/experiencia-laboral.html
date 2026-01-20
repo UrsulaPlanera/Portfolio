@@ -1,0 +1,22 @@
+
+
+<article>
+    @if(listaWorkExp.length > 0){
+        @for (experiencia of listaWorkExp; track $index){
+                <div class="container-work-experience">
+                    <p class="">{{ experiencia.puesto }}</p>
+                    <p>{{ experiencia.empresa }}</p>
+                    <p>{{ experiencia.inicio }} - {{ experiencia.fin.length == 0 ? "Actualidad" : experiencia.fin}}</p>
+                    <p><strong>Descripcion:</strong> {{ experiencia.description }}</p>
+                    <ul class="details-list">
+                    @for(datos of experiencia.items; track $index){
+                        <li>{{ datos }}</li>
+                    }
+                </ul>
+                </div>
+            }
+    }
+    @else{
+        <app-without-data />
+    }
+</article>

@@ -1,0 +1,15 @@
+
+.without-data{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-message{
+    font-size: 12px;
+}
+
+.secondary-message{
+    font-size: 8px;
+}
