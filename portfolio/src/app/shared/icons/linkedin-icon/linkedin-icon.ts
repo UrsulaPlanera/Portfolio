@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-linkedin-icon',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './linkedin-icon.css',
 })
 export class LinkedinIcon {
-
+@Input() tamanio : number = 24;
+  @Input() color : string = "ffffff";
 }

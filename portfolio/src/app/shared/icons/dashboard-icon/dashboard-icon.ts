@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-icon',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './dashboard-icon.css',
 })
 export class DashboardIcon {
+
+  @Input() tamanio : number = 24;
+  @Input() color : string = "#ffffff";
 
 }

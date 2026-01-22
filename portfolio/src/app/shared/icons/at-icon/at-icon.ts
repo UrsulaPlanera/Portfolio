@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-at-icon',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './at-icon.css',
 })
 export class AtIcon {
+
+  @Input() tamanio : number = 24;
+  @Input() color : string = "ffffff";
 
 }

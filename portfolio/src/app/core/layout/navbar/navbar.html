@@ -1,23 +1,17 @@
-<section class="container-body">
-    <nav class="container-nav">
-        <ul class="container-nav-items">
-            <li>
-                <a href="/">
-                    <app-dashboard-icon></app-dashboard-icon>
-                </a>
-            </li>
-            <li>
-                <a href="/proyectos">
-                    <app-briefcase-icon></app-briefcase-icon>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <article class="cointainer-pages">
-        <div class="subcontainer-pages">
-            <router-outlet class="container-router"/>
-        </div>
-    </article>
-</section>
 
+<div class="container-body">
+    <nav class="container-nav">
+    <ul>
+        <li>
+            <a href="/">Inicio</a>
+        </li>
+        <li>
+            <a href="/projects">Proyectos</a>
+        </li>
+    </ul>
+    </nav>
+    <div class="container-pages">
+        <router-outlet></router-outlet>
+    </div>
+</div>
 

@@ -1,28 +1,28 @@
 
-<section class="container-header">
-    <div class="presentation-container">
-        <p class="presentation-phrase">¡Hola! Soy Ursula</p>
-        <div class="position-title">
-            <div class="circle-status"></div>
-            <p>Desarrollo Web FullStack</p>
+<div>
+    <section class="container-presentation">
+    <article class="presentation-container">
+        <div class="presentation-body">
+            <div class="presentation-text">
+                <p class="presentation-name">¡Hola! Soy Ursula,</p>
+                <p class="presentation-ocupation">Desarrolladora Web FullStack</p>
+            </div>
+            <div class="presentation-icons">
+                <app-socials></app-socials>
+            </div>
         </div>
-        <app-socials/>
-    </div>
-    <div class="image-container">
-        <img class="perfil-image" src="https://media.licdn.com/dms/image/v2/D4D03AQGfeIdIOzAKDw/profile-displayphoto-crop_800_800/B4DZvEN_CZIgAM-/0/1768523559700?e=1770249600&v=beta&t=uS74xqUwOGO2PbjAw5BQDQTC8Bn5AHAdJ0BVmgopCb4" />
-    </div>
+        <div>
+            <img class="presentation-image" src="https://media.licdn.com/dms/image/v2/D4D03AQGfeIdIOzAKDw/profile-displayphoto-crop_800_800/B4DZvEN_CZIgAM-/0/1768523559700?e=1770854400&v=beta&t=Lkh5xsRI9VNJNWrk_YN-R4tO1adxTNbYS0qEUEEpQuM" />
+        </div>
+    </article>
 </section>
+<section class="information-container">
+    <div>
+        <p>Desarrolladora .NET en formación continua, con experiencia en desarrollo y validación de aplicaciones internas. He trabajado aplicando arquitectura de software, patrones de diseño y buenas prácticas, desarrollando APIs en .NET (C#) y participando en la construcción de soluciones técnicas mantenibles. Complemento mi experiencia con conocimientos en front-end (Angular y Blazor) y testing automatizado, lo que me permite abordar el desarrollo con una visión integral del ciclo de vida del software.</p>
+    </div>
+    <app-experiencia-laboral [listaWorkExp]="workList"></app-experiencia-laboral>
+    <app-estudios [listaEstudios]="educationList"></app-estudios>
+</section>
+</div>
 
-<section class="general-information-container">
-    <div class="presentation-container">
-        <p>Estudiante de ingenieria en sistemas y aprendiz autodidacta de desarrollo -web y movil-. Concentrada en aprender a desarrollar herramientas de calidad para colaborar en la realizacion de grandes ideas. ¡Un gusto!</p>
-    </div>
-    <div class="workexp-container section-info">
-        <p>Experiencia laboral</p>
-        <app-experiencia-laboral [listaWorkExp]="workList" />
-    </div>
-    <div class="studies-container section-info">
-        <p>Estudios</p>
-        <app-estudios [listaEstudios]="educationList"></app-estudios>
-    </div>
-</section>
+

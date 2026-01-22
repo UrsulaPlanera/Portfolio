@@ -3,8 +3,8 @@
     @if(listaEstudios.length > 0){
         @for (estudio of listaEstudios; track $index){
                 <div>
-                    <p>{{ estudio.nombreCarrera }}</p>
-                    <p>{{ estudio.universidad }}</p>
+                    <p><strong>{{ estudio.nombreCarrera }}</strong></p>
+                    <p><i>{{ estudio.universidad }}</i></p>
                     <p>{{ estudio.comienzo }} - {{ estudio.fin.length == 0 ? "Actualidad" : estudio.fin}}</p>
                 </div>
             }

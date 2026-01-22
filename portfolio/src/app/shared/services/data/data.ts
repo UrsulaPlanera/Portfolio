@@ -1,8 +1,11 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Education } from '../../models/education.model';
 import { WorkExperience } from '../../models/work-experience.interface';
+import  education  from '../../../../../public/data/education.json'
+import  workExperience  from '../../../../../public/data/workExperience.json'
+
 @Injectable({
   providedIn: 'root',
 })
@@ -12,13 +15,13 @@ export class DataService {
   private jsonEducation = 'data/education.json';
   private jsonWorkExperience= 'data/workExperience.json';
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   getDataEducation(): Observable<Education[]> {
-    return this.http.get<Education[]>(this.jsonEducation);
+    return of(education);
   }
 
   getDataWorkExperience(): Observable<WorkExperience[]> {
-    return this.http.get<WorkExperience[]>(this.jsonWorkExperience);
+    return of(workExperience);
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-briefcase-icon',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './briefcase-icon.css',
 })
 export class BriefcaseIcon {
+
+  @Input() tamanio : number = 24;
+  @Input() color : string = "#ffffff";
 
 }

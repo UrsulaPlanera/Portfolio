@@ -6,6 +6,7 @@
     row-gap: 0.5rem;
 }
 
-.container-work-experience ul{
+.details-list{
+    padding-left: 2rem;
     list-style: circle;
 }

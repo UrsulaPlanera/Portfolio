@@ -14,7 +14,7 @@ export const routes: Routes = [
                 component: Home
             },
             {
-                path: 'proyectos',
+                path: 'projects',
                 component: Projects
             }
         ]

@@ -4,7 +4,7 @@
     @if(listaWorkExp.length > 0){
         @for (experiencia of listaWorkExp; track $index){
                 <div class="container-work-experience">
-                    <p class="">{{ experiencia.puesto }}</p>
+                    <p class=""><strong>{{ experiencia.puesto }}</strong></p>
                     <p>{{ experiencia.empresa }}</p>
                     <p>{{ experiencia.inicio }} - {{ experiencia.fin.length == 0 ? "Actualidad" : experiencia.fin}}</p>
                     <p><strong>Descripcion:</strong> {{ experiencia.description }}</p>
